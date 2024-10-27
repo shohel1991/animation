@@ -1,0 +1,42 @@
+@keyframes sliding {
+    0%{
+        background-color: gold;
+        left: 0;
+        top: 0;
+
+    }
+    25%{
+        top: 200px;
+        background-color: red;
+    }
+    50%{
+        top: 0;
+    }
+    75%{
+        top: 200px;
+        background-color: greenyellow;
+    }
+
+    100%{
+        background-color: magenta;
+        left: 400px;
+        top: 0;
+    }
+    
+}
+
+.stage{
+    width: 500px;
+    height: 300px;
+    border: 2px solid cadetblue;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-radius: 50px;
+    position: relative;
+    animation: sliding  2s ease-in-out 0.5s infinite alternate ;
+    animation-play-state: running;
+
+}
